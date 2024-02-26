@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+:root {
+  ---main-title: 3em;
+  ---sub-title: 2em;
+  ---phg: 1.1em;
+  ---white: #ffffff;
+  ---gradient-soft: linear-gradient(to top, lch(92.94% 39 165.58), #7ae3bee3);
+  ---white-cyan: color-mix(in srgb, rgb(204, 253, 125) 60%, #fff 30%);
+}
+
+@font-face {
+  font-family: "KodelMono SmBD";
+  src: url("../assest/fonts/KodeMono-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "KodelMono Regular";
+  src: url("../assest/fonts/KodeMono-Regular.ttf");
+  font-weight: normal;
+}
+
+body {
+  min-height: 100dvh;
+  font-family: "KodelMono Regular";
+  background-image: var(---gradient-soft);
+  hyphens: manual;
+}
+
+h1 {
+  font-family: "KodelMono SmBD";
+  font-size: var(---main-title);
+  color: var(---white-cyan);
+  text-shadow: 0.15rem 0.1rem 0.07rem rgba(0, 0, 0, 0.814);
+}
+
+figcaption {
+  font-size: var(---phg);
+  line-height: 1.8;
+}
+
+label {
+  font-size: 1.1em;
+  letter-spacing: 0.09em;
+}
+
+strong {
+  color: var(---gree-ligh);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+form,
+input,
+label {
+  display: block;
+  hyphens: auto;
+  background-color: transparent;
+  appearance: none;
+}
+
+
+img,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center center;
+  object-position: center center;
+}
+
+li {
+  list-style-type: none;
+}
