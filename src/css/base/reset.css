@@ -5,7 +5,7 @@
   ---sub-title: 2em;
   ---phg: 1.1em;
   ---white: #ffffff;
-  ---gradient-soft: linear-gradient(to top, lch(92.94% 39 165.58), #7ae3bee3);
+  ---gradient-soft: linear-gradient(to top, #070000, #080808);
   ---white-cyan: color-mix(in srgb, rgb(204, 253, 125) 60%, #fff 30%);
 }
 
@@ -85,4 +85,21 @@ figure {
 
 li {
   list-style-type: none;
+}
+
+
+::-webkit-scrollbar {
+  width: 1rem;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  height: 6px;
+  background-color: #454545ac;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0004;
 }
