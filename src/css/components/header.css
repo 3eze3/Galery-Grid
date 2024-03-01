@@ -9,23 +9,23 @@
   & .header__form {
     padding: 1rem;
     border-radius: 1.7em;
-    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem #6baaa096 inset,
-      -0.2rem -0.2rem 0.2rem .01rem #ffffff55 inset;
+    box-shadow: 0.1rem 0.1rem 0.09rem 0rem #6baaa0 inset,
+      -0.2rem -0.2rem 0.2rem .01rem #ffffff55;
   }
 
   & .header__label {
-    color: color-mix(in srgb, rgba(5, 73, 65, 0.993) 60%, #ffd000 50%);
+    color: color-mix(in srgb, rgba(255, 255, 255, 0.993) 60%, #ffd000 50%);
     transition: ease 0.4s;
   }
 
   & .header__label--rule {
     cursor: pointer;
-    color: rgb(85, 73, 9);
+    color: rgb(238, 234, 214);
 
   }
 
   & .header__input:checked+.header__label>.header__label--rule {
-    color: #856903;
+    color: #fbf2d5;
     text-shadow: 0.15em .25em .25em rgba(42, 35, 0, 0.507);
     transition: ease 0.4s;
   }
